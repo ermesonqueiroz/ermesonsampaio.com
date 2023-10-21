@@ -19,7 +19,7 @@
 
         <figure class="relative overflow-x-auto mt-4">
             <table class="w-full text-left">
-                <thead class="bg-gray-200">
+                <thead class="bg-gray-200 font-heading">
                     <tr>
                         <th scope="row" class="uppercase px-6 py-3">#</th>
                         <th scope="row" class="uppercase px-6 py-3">slug</th>
