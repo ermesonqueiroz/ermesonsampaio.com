@@ -1,7 +1,7 @@
 <main class="w-full max-w-screen-xl mx-auto mt-5 grid grid-cols-2 gap-x-28 gap-y-14">
     @foreach($articles as $article)
         <section class="flex flex-col gap-3">
-            <span class="inline-flex gap-4 text-indigo-600">
+            <span class="inline-flex gap-3 font-heading text-indigo-600">
                 <p>{{ date_format($article->created_at, 'd/m/Y') }}</p>
                 @foreach($article->tags as $tag)
                     <p>#{{ $tag->name }}</p>

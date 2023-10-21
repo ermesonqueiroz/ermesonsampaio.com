@@ -14,4 +14,5 @@ use App\Http\Controllers\BlogController;
 |
 */
 
-Route::name('blog')->get('/', [BlogController::class, 'index']);
+Route::view('/', 'index')->name('blog');
+Route::view('/{slug}', 'article')->name('article');

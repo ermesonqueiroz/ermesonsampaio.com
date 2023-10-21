@@ -7,14 +7,14 @@ return [
          *
          * More info: https://spatie.be/docs/laravel-markdown/v1/installation-setup
          */
-        'enabled' => true,
+        'enabled' => false,
 
         /*
          * The name of or path to a Shiki theme
          *
          * More info: https://github.com/shikijs/shiki/blob/main/docs/themes.md
          */
-        'theme' => 'min-dark',
+        'theme' => 'github-light',
     ],
 
     /*
@@ -53,7 +53,7 @@ return [
      *
      * More info: https://spatie.be/docs/laravel-markdown/v1/advanced-usage/customizing-the-rendering-process
      */
-    'renderer_class' => Spatie\LaravelMarkdown\MarkdownRenderer::class,
+    'renderer_class' => \App\LaravelMarkdown\MarkdownRendererWithTorchlight::class,
 
     /*
      * These extensions should be added to the markdown environment. A valid

@@ -13,7 +13,9 @@
         "librarianphp/parsed": "^1.0",
         "livewire/livewire": "^3.0",
         "spatie/laravel-markdown": "^2.4",
-        "tightenco/ziggy": "^1.8"
+        "tightenco/ziggy": "^1.8",
+        "torchlight/torchlight-commonmark": "^0.5.5",
+        "torchlight/torchlight-laravel": "^0.5.14"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
