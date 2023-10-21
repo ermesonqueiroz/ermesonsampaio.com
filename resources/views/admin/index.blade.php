@@ -1,1 +1,3 @@
-<h1>Dashboard</h1>
+<x-layout>
+    @livewire('navbar')
+</x-layout>

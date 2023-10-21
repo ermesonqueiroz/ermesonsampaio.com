@@ -9,10 +9,13 @@ class Navbar extends Component
 {
     public function render(): View
     {
+        $navItems = [
+            'blog',
+            'admin'
+        ];
+
         return view('livewire.navbar', [
-            'navItems' => [
-                'blog'
-            ],
+            'navItems' => $navItems,
             'activeRoute' => request()->route()->getName()
         ]);
     }

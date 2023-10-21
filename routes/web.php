@@ -14,11 +14,11 @@ use App\Http\Controllers\BlogController;
 |
 */
 
-Route::view('/admin/login', 'admin.login')->middleware('guest')->name('admin.login');
+Route::view('/admin/login', 'admin.login')->middleware('guest')->name('login');
 
 Route::prefix('/admin')->middleware('auth:sanctum')->group(function () {
-    Route::view('/', 'admin.index')->name('index');
-})->name('admin.');
+    Route::view('/', 'admin.index')->name('admin');
+});
 
 Route::view('/', 'index')->name('blog');
 Route::view('/{slug}', 'article')->name('article');
