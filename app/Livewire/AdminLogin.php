@@ -15,7 +15,7 @@ class AdminLogin extends Component
     public function handleSubmit(): void
     {
         $auth = Auth::attempt([
-            'email' => $this->login,
+            'login' => $this->login,
             'password' => $this->password
         ]);
 
