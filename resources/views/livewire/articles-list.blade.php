@@ -7,13 +7,13 @@
                     <p>#{{ $tag->name }}</p>
                 @endforeach
             </span>
-            <img src="{{ $article->banner->url }}" alt="{{ $article->title }}"/>
+            <img class="aspect-[4/2] object-cover object-center" src="{{ $article->banner->url }}" alt="{{ $article->title }}" />
             <hgroup>
                 <h1 class="text-3xl leading-tight tracking-wide font-heading uppercase font-bold text-justify hover:text-neutral-600 transition-colors">
                     <a href="{{ $article->slug }}">{{ $article->title }}</a>
                 </h1>
                 <h2 class="mt-2 font-heading leading-snug text-lg text-justify">
-                    Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation, freeing you to create without sweating the small things.
+                    {{ $article->subtitle }}
                 </h2>
             </hgroup>
         </section>
