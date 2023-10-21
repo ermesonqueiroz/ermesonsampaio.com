@@ -12,7 +12,8 @@ class Article extends Model
     protected $fillable = [
         'slug',
         'title',
-        'content'
+        'content',
+        'subtitle'
     ];
 
     public function tags(): BelongsToMany
