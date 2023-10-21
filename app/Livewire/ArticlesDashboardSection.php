@@ -16,7 +16,7 @@ class ArticlesDashboardSection extends Component
             'lastArticleAt' => Article::query()
                 ->orderByDesc('created_at')
                 ->first()
-                ->created_at
+                ?->created_at
         ]);
     }
 }

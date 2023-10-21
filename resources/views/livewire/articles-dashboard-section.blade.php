@@ -4,14 +4,16 @@
             <h2 class="font-heading  text-lg">Número de Artigos</h2>
             <p class="text-2xl font-bold">{{ $totalArticles }}</p>
         </div>
-        <div class="p-6 bg-gray-200 rounded-sm">
-            <h2 class="font-heading text-lg">Dias sem postar</h2>
-            <p class="text-2xl font-bold">{{ date_diff($lastArticleAt, now())->days }}</p>
-        </div>
-        <div class="p-6 bg-gray-200 rounded-sm">
-            <h2 class="font-heading text-lg">Último artigo postado em</h2>
-            <p class="text-2xl font-bold">{{ date_format($lastArticleAt, 'd/m/Y') }}</p>
-        </div>
+        @if($totalArticles > 0)
+            <div class="p-6 bg-gray-200 rounded-sm">
+                <h2 class="font-heading text-lg">Dias sem postar</h2>
+                <p class="text-2xl font-bold">{{ date_diff($lastArticleAt, now())->days }}</p>
+            </div>
+            <div class="p-6 bg-gray-200 rounded-sm">
+                <h2 class="font-heading text-lg">Último artigo postado em</h2>
+                <p class="text-2xl font-bold">{{ date_format($lastArticleAt, 'd/m/Y') }}</p>
+            </div>
+        @endif
     </div>
 
     <div>
