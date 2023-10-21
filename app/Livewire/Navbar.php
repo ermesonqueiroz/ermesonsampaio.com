@@ -11,8 +11,9 @@ class Navbar extends Component
     {
         $navItems = [
             'blog',
-            'admin'
         ];
+
+        if (auth()->user()) $navItems[] = 'admin';
 
         return view('livewire.navbar', [
             'navItems' => $navItems,

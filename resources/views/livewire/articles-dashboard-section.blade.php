@@ -32,6 +32,7 @@
                         <th scope="row" class="uppercase px-6 py-3">#</th>
                         <th scope="row" class="uppercase px-6 py-3">slug</th>
                         <th scope="row" class="uppercase px-6 py-3">title</th>
+                        <th scope="row" class="uppercase px-6 py-3">status</th>
                         <th scope="row" class="px-6 py-3"></th>
                     </tr>
                 </thead>
@@ -45,6 +46,7 @@
                                 </a>
                             </td>
                             <td class="truncate px-6 py-3">{{ $article->title }}</td>
+                            <td class="truncate px-6 py-3 font-mono">{{ $article->status }}</td>
                             <td>
                                 <a href="/admin/{{ $article->slug }}">
                                     <x-eos-edit class="h-6 w-6" />

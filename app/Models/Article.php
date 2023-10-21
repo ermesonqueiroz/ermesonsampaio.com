@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Casts\Attribute;
+use App\Enums\ArticleStatus;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -13,7 +13,12 @@ class Article extends Model
         'slug',
         'title',
         'content',
-        'subtitle'
+        'subtitle',
+        'status'
+    ];
+
+    protected $casts = [
+        'status'=> ArticleStatus::class
     ];
 
     public function tags(): BelongsToMany

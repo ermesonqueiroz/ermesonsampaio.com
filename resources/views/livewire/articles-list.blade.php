@@ -9,7 +9,10 @@
             </span>
             <img class="aspect-[4/2] object-cover object-center" src="{{ $article->banner->url }}" alt="{{ $article->title }}" />
             <hgroup>
-                <h1 class="text-3xl leading-tight tracking-wide font-heading uppercase font-bold text-justify hover:text-neutral-600 transition-colors">
+                @if($article->status !== \App\Enums\ArticleStatus::PUBLISHED)
+                    <p class="text-red-600 font-heading">Pré-visualização</p>
+                @endif
+                <h1 class="text-3xl w-fit leading-tight tracking-wide font-heading uppercase font-bold text-justify hover:text-neutral-600 transition-colors">
                     <a href="{{ $article->slug }}">{{ $article->title }}</a>
                 </h1>
                 <h2 class="mt-2 font-heading leading-snug text-lg text-justify">
