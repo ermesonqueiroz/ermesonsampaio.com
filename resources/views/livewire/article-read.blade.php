@@ -14,9 +14,7 @@
         <img class="aspect-[4/2] object-cover content-center" src="{{ $article->banner->url }}" alt="{{ $article->title }}"/>
     </header>
 
-    <article class="prose prose-xl w-full font-heading max-w-none">
-        <x-markdown>
-            {!! $article->content !!}
-        </x-markdown>
+    <article class="prose prose-lg w-full font-heading max-w-none mt-4">
+        {!! $content !!}
     </article>
 </main>

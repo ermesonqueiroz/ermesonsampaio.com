@@ -15,6 +15,6 @@
     },
     "dependencies": {
         "@tailwindcss/typography": "^0.5.10",
-        "shiki": "^0.14.5"
+        "highlight.js": "^11.9.0"
     }
 }

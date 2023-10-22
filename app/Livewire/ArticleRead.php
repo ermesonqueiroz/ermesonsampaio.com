@@ -3,9 +3,10 @@
 namespace App\Livewire;
 
 use App\Enums\ArticleStatus;
+use App\Markdown\MarkdownConverter;
 use App\Models\Article;
+use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\View\View;
 use Livewire\Component;
 
 class ArticleRead extends Component
@@ -27,7 +28,8 @@ class ArticleRead extends Component
     {
         if (!$this->article) abort(404);
         return view('livewire.article-read', [
-            'article' => $this->article
+            'article' => $this->article,
+            'content' => MarkdownConverter::convert($this->article->content)
         ]);
     }
 }
