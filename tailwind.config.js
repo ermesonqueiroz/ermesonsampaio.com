@@ -10,7 +10,7 @@ module.exports = {
             fontFamily: {
                 'sans': ['"IBM Plex Sans"', ...defaultTheme.fontFamily.sans],
                 'heading': ['"Inter"', ...defaultTheme.fontFamily.sans],
-                'mono': ['"DM Mono"', ...defaultTheme.fontFamily.mono],
+                'mono': ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono],
             }
         },
     },

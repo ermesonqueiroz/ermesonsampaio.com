@@ -1,5 +1,5 @@
-<header class="w-full max-w-screen-xl mx-auto py-8">
-    <nav class="flex justify-between w-full items-center">
+<header class="w-full flex py-8 border-b justify-center border-gray-200">
+    <nav class="flex justify-between max-w-screen-xl w-full items-center">
         <h1 class="select-none text-3xl uppercase font-bold hover:text-neutral-600 transition-colors">
             <a href="/">Ermeson Sampaio</a>
         </h1>

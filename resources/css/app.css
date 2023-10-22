@@ -23,3 +23,13 @@ input,
 textarea {
     outline: none;
 }
+
+code::after,
+code::before {
+    content: none !important;
+}
+
+code {
+    @apply bg-indigo-600 py-1 px-2 text-white whitespace-nowrap;
+    color: #fff !important;
+}
