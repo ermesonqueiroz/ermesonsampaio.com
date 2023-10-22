@@ -13,7 +13,6 @@ class Article extends Model
         'slug',
         'title',
         'content',
-        'subtitle',
         'status'
     ];
 

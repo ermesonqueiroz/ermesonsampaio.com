@@ -23,17 +23,6 @@
                 />
             </div>
             <div class="flex flex-col gap-2">
-                <label for="subtitle" class="text-xl font-heading uppercase font-bold tracking-wide">Subtítulo</label>
-                <textarea
-                    required
-                    id="subtitle"
-                    maxlength="255"
-                    rows="4"
-                    wire:model.live="subtitle"
-                    class="border border-gray-300 p-2 resize-none w-full h-auto rounded-md"
-                ></textarea>
-            </div>
-            <div class="flex flex-col gap-2">
                 <label for="content" class="text-xl font-heading uppercase font-bold tracking-wide">Conteúdo</label>
                 <textarea
                     required

@@ -12,7 +12,6 @@ class CreateArticle extends Component
 {
     public string $banner;
     public string $title;
-    public string $subtitle;
     public string $content;
 
     public function handleSave(): void
@@ -22,8 +21,7 @@ class CreateArticle extends Component
         $article = Article::create([
             'slug' => Str::slug($this->title),
             'title' => $this->title,
-            'content' => $this->content,
-            'subtitle' => $this->subtitle
+            'content' => $this->content
         ]);
 
         $article->banner()->create([

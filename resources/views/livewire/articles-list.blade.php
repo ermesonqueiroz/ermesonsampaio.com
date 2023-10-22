@@ -15,9 +15,6 @@
                 <h1 class="text-3xl w-fit leading-tight tracking-wide font-heading uppercase font-bold text-justify hover:text-neutral-600 transition-colors">
                     <a href="{{ $article->slug }}">{{ $article->title }}</a>
                 </h1>
-                <h2 class="mt-2 font-heading leading-snug text-lg text-justify">
-                    {{ $article->subtitle }}
-                </h2>
             </hgroup>
         </section>
     @endforeach
