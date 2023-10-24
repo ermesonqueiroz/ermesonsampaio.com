@@ -29,6 +29,6 @@
     </div>
 
     <div class="flex w-full h-10 pb-6 items-center justify-center">
-        <p class="font-heading text-black">Copyright &copy; 2022 Ermeson Sampaio</p>
+        <p class="font-heading text-black">Copyright &copy; 2023 Ermeson Sampaio</p>
     </div>
 </footer>
