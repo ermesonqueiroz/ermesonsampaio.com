@@ -1,4 +1,4 @@
-<main class="w-full max-w-screen-xl mx-auto mt-5 grid grid-cols-2 gap-x-28 gap-y-14">
+<main class="w-full max-w-screen-xl mx-auto my-16 grid grid-cols-2 gap-x-28 gap-y-14">
     @foreach($articles as $article)
         <section class="flex flex-col gap-3">
             <span class="inline-flex gap-3 font-heading text-indigo-600">

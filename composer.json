@@ -14,6 +14,7 @@
         "league/commonmark": "^2.4",
         "librarianphp/parsed": "^1.0",
         "livewire/livewire": "^3.0",
+        "owenvoke/blade-fontawesome": "^2.4",
         "tightenco/ziggy": "^1.8"
     },
     "require-dev": {

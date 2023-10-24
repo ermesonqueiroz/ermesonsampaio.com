@@ -8,6 +8,7 @@ use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
 use League\CommonMark\Extension\CommonMark\Node\Block\IndentedCode;
 use League\CommonMark\Extension\CommonMark\Renderer\Block\FencedCodeRenderer;
 use League\CommonMark\Extension\CommonMark\Renderer\Block\IndentedCodeRenderer;
+use League\CommonMark\Extension\GithubFlavoredMarkdownExtension;
 use League\CommonMark\Parser\MarkdownParser;
 use League\CommonMark\Renderer\HtmlRenderer;
 

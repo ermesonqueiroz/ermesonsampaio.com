@@ -20,7 +20,7 @@
         <div class="flex justify-between items-center">
             <h1 class="uppercase text-3xl font-bold font-heading">Artigos</h1>
 
-            <a href="/admin/article" class="font-heading font-medium text-white bg-indigo-600 px-3 h-10 text-center flex items-center rounded-md">
+            <a href="/admin/artigo" class="font-heading font-medium text-white bg-indigo-600 px-3 h-10 text-center flex items-center rounded-md">
                 Novo Artigo
             </a>
         </div>

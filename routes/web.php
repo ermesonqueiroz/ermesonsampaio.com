@@ -18,7 +18,8 @@ Route::view('/admin/login', 'admin.login')->middleware('guest')->name('login');
 
 Route::prefix('/admin')->middleware('auth:sanctum')->group(function () {
     Route::view('/', 'admin.index')->name('admin');
-    Route::view('/article', 'admin.create-article')->name('create-article');
+    Route::view('/artigo', 'admin.create-article')->name('create-article');
+    Route::view('/{slug}', 'admin.update-article')->name('update-article');
 });
 
 Route::view('/', 'index')->name('blog');

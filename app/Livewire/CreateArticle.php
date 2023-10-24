@@ -3,10 +3,10 @@
 namespace App\Livewire;
 
 use App\Models\Article;
-use Illuminate\Support\Facades\Log;
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
-use Illuminate\View\View;
 use Livewire\Component;
+use App\Markdown\MarkdownConverter;
 
 class CreateArticle extends Component
 {
@@ -16,8 +16,6 @@ class CreateArticle extends Component
 
     public function handleSave(): void
     {
-        Log::info('opa');
-
         $article = Article::create([
             'slug' => Str::slug($this->title),
             'title' => $this->title,

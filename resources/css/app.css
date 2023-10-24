@@ -33,3 +33,7 @@ code {
     @apply bg-indigo-600 py-1 px-2 text-white whitespace-nowrap;
     color: #fff !important;
 }
+
+pre, code {
+    white-space: pre-wrap;
+}
