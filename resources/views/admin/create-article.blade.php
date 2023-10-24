@@ -1,4 +1,4 @@
 <x-layout>
     @livewire('navbar')
-    @livewire('create-article')
+    @livewire('admin-article')
 </x-layout>

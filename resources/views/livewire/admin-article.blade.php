@@ -1,4 +1,4 @@
-<form class="w-full max-w-screen-xl mx-auto mb-10" wire:submit.prevent="handleUpdate">
+<form class="w-full max-w-screen-xl mx-auto mb-10" wire:submit.prevent="handleSubmit">
     <div class="flex flex-col gap-y-8 my-10">
         <div class="flex flex-col gap-2">
             <label for="banner" class="text-xl font-heading uppercase font-bold tracking-wide">Banner</label>
@@ -30,7 +30,7 @@
                     name="content"
                     class="border border-gray-300 rounded-md resize-y p-2"
                     rows="10"
-                    wire:model.debounce.60s="content"
+                    wire:model.live="content"
                 ></textarea>
             </div>
         </div>
