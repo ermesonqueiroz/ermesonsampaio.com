@@ -9,9 +9,6 @@
                 <li class="font-heading uppercase">
                     <a href="/">blog</a>
                 </li>
-                <li class="font-heading uppercase">
-                    <a href="/sobre">sobre</a>
-                </li>
             </ul>
         </div>
 
