@@ -1,4 +1,4 @@
-<form class="w-full max-w-screen-xl mx-auto mb-10" wire:submit.prevent="handleSubmit">
+<form class="w-full max-w-screen-xl mx-auto mb-10 md:px-8" wire:submit.prevent="handleSubmit">
     <div class="flex flex-col gap-y-8 my-10">
         <div class="flex flex-col gap-2">
             <label for="banner" class="text-xl font-heading uppercase font-bold tracking-wide">Banner</label>

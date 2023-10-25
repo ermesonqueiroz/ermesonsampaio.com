@@ -1,4 +1,4 @@
-<section class="w-full max-w-screen-xl mx-auto flex flex-col gap-8 mt-6">
+<section class="w-full max-w-screen-xl mx-auto flex flex-col gap-8 mt-6 px-5 md:px-8">
     <div class="flex gap-4">
         <div class="p-6 bg-gray-200 rounded-sm">
             <h2 class="font-heading  text-lg">Número de Artigos</h2>
