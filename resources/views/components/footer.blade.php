@@ -1,5 +1,5 @@
 <footer class="bg-neutral-200 w-full pt-14 mt-[15vh]">
-    <div class="w-full mx-auto max-w-screen-sm pb-14 grid grid-cols-2 font-heading">
+    <div class="mx-auto pb-14 max-w-screen-sm px-5 md:px-8 grid grid-cols-1 gap-y-10 sm:grid-cols-2 font-heading">
         <div class="flex flex-col">
             <h2 class="text-xl uppercase font-bold font-sans">
                 Navegação
