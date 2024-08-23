@@ -17,7 +17,7 @@ jobs:
         php-version: '8.0'
     - uses: actions/checkout@v4
     - name: Symlink
-      run: ln -s $GITHUB_WORKSPACE /var/www/ermesonsampaio.com
+      run: ln -s $GITHUB_WORKSPACE ~/ermesonsampaio.com
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install Dependencies
