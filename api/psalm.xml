@@ -10,10 +10,10 @@
     phpVersion="8.5"
 >
     <projectFiles>
-        <file name="public/index.php" />
-        <directory name="src" />
+        <file name="public/index.php"/>
+        <directory name="src"/>
         <ignoreFiles>
-            <directory name="vendor" />
+            <directory name="vendor"/>
         </ignoreFiles>
     </projectFiles>
     <issueHandlers>
@@ -27,4 +27,4 @@
         <MissingReturnType errorLevel="error"/>
         <UnusedClass errorLevel="error"/>
     </issueHandlers>
-</psalm>
+<plugins><pluginClass class="Psalm\MockeryPlugin\Plugin"/></plugins></psalm>

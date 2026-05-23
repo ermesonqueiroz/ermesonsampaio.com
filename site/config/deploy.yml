@@ -7,11 +7,11 @@ ssh:
 
 servers:
   web:
-    - ermeson.is-a.dev
+    - 65.108.155.115
 
 proxy:
   ssl: true
-  host: ermeson.is-a.dev
+  host: 65.108.155.115
   app_port: 80
   healthcheck:
     path: /

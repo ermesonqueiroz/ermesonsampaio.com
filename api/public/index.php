@@ -7,6 +7,7 @@ use Ermeson\BlogApi\DataObject\TelegramSendMessage;
 use Ermeson\BlogApi\Http\Requests\ContactRequest;
 use Ermeson\BlogApi\Services\TelegramService;
 use Ermeson\BlogApi\Infra\DatabaseConnection;
+use GuzzleHttp\Client;
 
 $config = new AppConfig();
 
@@ -19,7 +20,7 @@ header("Access-Control-Allow-Origin: $allowedOrigins");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
 
-$telegramService = new TelegramService($config);
+$telegramService = new TelegramService($config, new Client());
 
 $requestUri = rtrim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 $requsetMethod = $_SERVER['REQUEST_METHOD'];

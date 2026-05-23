@@ -7,11 +7,11 @@ ssh:
 
 servers:
     web:
-        - ermeson.is-a.dev
+        - 65.108.155.115
 
 readiness_delay: 60
 proxy:
-    host: ermeson.is-a.dev
+    host: 65.108.155.115
     app_port: 80
     path_prefix: /api
     healthcheck:
@@ -44,7 +44,7 @@ env:
 accessories:
     psql:
         image: postgres:16-alpine
-        host: ermeson.is-a.dev
+        host: 65.108.155.115
         network: kamal
         env:
             clear:

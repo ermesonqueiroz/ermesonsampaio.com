@@ -13,9 +13,14 @@
             "email": "ermeson.s.queiroz@gmail.com"
         }
     ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
     "require-dev": {
         "vimeo/psalm": "^6.16",
-        "pestphp/pest-plugin-browser": "^4.3"
+        "pestphp/pest-plugin-browser": "^4.3",
+        "mockery/mockery": "^1.6",
+        "psalm/plugin-mockery": "^1.2"
     },
     "config": {
         "allow-plugins": {

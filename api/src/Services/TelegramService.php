@@ -6,30 +6,24 @@ namespace Ermeson\BlogApi\Services;
 
 use Ermeson\BlogApi\Config\AppConfig;
 use Ermeson\BlogApi\DataObject\TelegramSendMessage;
-use Exception;
-
-use function strlen;
+use GuzzleHttp\Client as HttpClient;
+use GuzzleHttp\RequestOptions;
 
 final class TelegramService
 {
-    public function __construct(private readonly AppConfig $appConfig)
+    public function __construct(
+        private readonly AppConfig $appConfig,
+        private readonly HttpClient $client
+    )
     {
     }
 
     public function sendMessage(TelegramSendMessage $message): void
     {
-        $payload = json_encode($message->toArray());
+        $payload = $message->toArray();
 
-        $ch = curl_init($this->appConfig->telegramBaseUrl . '/sendMessage');
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            'Content-Type: application/json',
-            'Content-Length: ' . strlen($payload)
+        $this->client->post("{$this->appConfig->telegramBaseUrl}/sendMessage", [
+            RequestOptions::JSON => $payload
         ]);
-
-        curl_exec($ch);
-        unset($ch);
     }
 }
